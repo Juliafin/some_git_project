@@ -1,0 +1,17 @@
+master - Pristine working code only! (release code)
+  |
+development - Code that is supposed to work but may possibly have bugs or is being tested (Beta code)
+  |
+feature/bug branch - Code that is probably unstable! - (Pre-alpha - alpha)
+
+
+1. Branch from development to feature branch
+2. When feature branch is complete, merge development into your feature branch.
+
+  git checkout development
+  git pull 
+  git checkout your-feature-branch
+  git merge development
+3. Resolve conflicts
+4. Open a pull request to merge code into development (after conflicts are resolved in the feature branch)
+5. Test code in development - When it has been thoroughly tested, open a pr to merge from development to master
